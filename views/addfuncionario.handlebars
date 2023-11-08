@@ -1,0 +1,37 @@
+<h2>FAÇA O SEU CADASTRO NA SUA EMPRESA:</h2>
+
+<div class="card mt-4">
+    <div class="card-body">
+        <form action="/funcionarios/registrar" method="POST">
+        <label for="nome_fun">Nome do Funcionário:</label>
+        <input type="text" name="nome_fun" id="nome_fun" class="form-control" required><br>
+
+        <label for="telefone_fun">Telefone do Funcionário:</label>
+        <input type="number" name="telefone_fun" id="telefone_fun" class="form-control" required><br>
+
+        <label for="sexo">Sexo do Funcionário:</label>
+        <select name="sexo" id="sexo" class="form-control" required>
+            <option value="masculino" class="form-control">Masculino</option>
+            <option value="feminino" class="form-control">Feminino</option>
+            <option value="outro" class="form-control">Outro</option>
+        </select><br>
+
+        <label for="salario">Salário do Funcionário:</label>
+        <input type="number" name="salario" id="salario" class="form-control" required><br>
+
+        <label for="cpf_fun">CPF do Funcionário:</label>
+        <input type="number" name="cpf_fun" id="cpf_fun" class="form-control" required><br>
+
+        <label for="empresa_fun">Empresa do Funcionário:</label>
+        <select name="empresa_fun" id="empresa_fun" class="form-control">
+            {{#each empresas}}
+                <option value="{{_id}}" class="form-control">{{nome_emp}}</option>
+            {{/each}}
+        </select> <br>
+
+        <label for="cargo">Cargo do Funcionário:</label>
+        <input type="text" name="cargo" id="cargo" class="form-control" required><br>
+
+        <input type="submit" value="Enviar" class="btn btn-success">
+    </div>
+</div>

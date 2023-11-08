@@ -1,0 +1,14 @@
+<h2>ADICIONE SUA EMPRESA AQUI:</h2>
+<a href="/empresas/registrar"><button class="btn btn-success">ADICIONAR EMPRESA</button></a>
+<hr>
+
+{{#each empresas}}
+<div class="card mt-4">
+    <div class="card-body">
+        <h3>{{nome_emp}}</h3>
+        <p>Contato: {{telefone_emp}}</p>
+        <hr>
+        <a href="/empresa/{{_id}}"><button class="btn btn-success">VER A LISTA DE FUNCIONÁRIOS</button></a>
+    </div>
+</div>
+{{/each}}

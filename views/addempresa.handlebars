@@ -1,0 +1,26 @@
+<h2>REGISTRE SUA EMPRESA AQUI: </h2>
+<div class="card">
+    <div class="card-body">
+        <form action="/empresas/registrar" method="POST">
+        <label for="nome_emp">Nome da Empresa:</label>
+        <input type="text" name="nome_emp" id="nome_emp" class="form-control" required><br>
+
+        <label for="telefone_emp">Telefone da Empresa:</label>
+        <input type="number" name="telefone_emp" id="telefone_emp" class="form-control" required><br>
+
+        <label for="endereco">Endereço da Empresa:</label>
+        <input type="text" name="endereco" id="endereco" class="form-control" required><br>
+
+        <label for="cnpj">CNPJ da Empresa:</label>
+        <input type="number" name="cnpj" id="cnpj" class="form-control" required><br>
+
+        <label for="chave_gerente">Chave do Gerente:</label>
+        <input type="text" name="chave_gerente" id="chave_gerente" class="form-control" required><br>
+
+        <label for="chave_funcionario">Chave do Funcionário:</label>
+        <input type="text" name="chave_funcionario" id="chave_funcionario" class="form-control" required><br>
+
+        <input type="submit" value="Enviar" class="btn btn-success">
+    </form>
+    </div>
+</div>
